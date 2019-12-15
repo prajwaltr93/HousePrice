@@ -17,7 +17,7 @@ for i in range(0,csv_data.shape[0]):
     #    break
     #print(csv_data[2][i])
     #'''
-    resp = req.get("http://open.mapquestapi.com/geocoding/v1/address?key=GAJXRMasoSuJjzJZxQiTiH4aYHIYvL9h&location="+str(csv_data[2][i]))
+    resp = req.get("http://open.mapquestapi.com/geocoding/v1/address?key=KEY&location="+str(csv_data[2][i]))
     data = resp.json()
     #data['results'][0]['locations'][0]['latLng']
     lat = data['results'][0]['locations'][0]['latLng']['lat']
